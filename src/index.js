@@ -7,10 +7,6 @@ import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// if (process.env.NODE_ENV === 'production') {
-//   window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {};
-// }
-
 if (process.env.NODE_ENV === 'production') {
   disableReactDevTools();
 }
